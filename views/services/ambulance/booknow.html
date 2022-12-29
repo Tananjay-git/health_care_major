@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Ambulanceform</title>
+<link rel="stylesheet" href="ambulanceform.css">
+    </head>
+    <body>
+    <div class="container">
+        <form id="form1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6882.615453076377!2d78.0713518949655!3d30.399009926660327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d7060836b5ff%3A0xc44af09100d88de5!2sMakka%20Wala%2C%20Uttarakhand%20248009!5e0!3m2!1sen!2sin!4v1643870447764!5m2!1sen!2sin" width="100%" height="50%" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+             <div class="btn-box">
+            <button type="button" id="next1">Book Ambulance Service</button></div>
+            
+        </form>
+        
+        <form id="form2">
+        <h3>User Details</h3>
+        <input type="text" placeholder="Enter Your Name" required>
+            <input type="text" placeholder="Start Location" required>
+            <input type="text" placeholder="Drop Location" required>
+            <input type="text" placeholder="Mobile Number" required>
+            
+            <div class="btn-box">
+            <button type="button" id="back1">Back</button>
+            <button type="button" id="next2">Next</button>
+            </div>
+        </form>
+        
+         <form id="form3">
+             <h3>Amulance Type</h3>
+           <div>
+          <input type="checkbox" id="1"value="basic" name="location">
+             <label for="1">Basic</label>
+          <input type="checkbox" for="f2" value="advance" name="location">
+             <label for="2">Transport</label>
+        <input type="checkbox" id="f3" value="Air" name="location">
+             <label for="f3">Air</label>
+             </div>
+              
+             
+            
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+            <button type="button">Submit</button>
+            
+            </div>
+        </form>
+        
+        <div class="steprow">
+        <div id="progress"></div>
+            <div class="stepcol"><small>Location</small></div>
+            <div class="stepcol"><small>User Details</small></div>
+            <div class="stepcol"><small>Ambulance Type</small></div>
+     
+            
+        </div>
+        
+        </div>
+        
+        <script>
+             var form1 = document.getElementById("form1");
+             var form2 = document.getElementById("form2");
+             var form3 = document.getElementById("form3");
+            
+            var next1=document.getElementById("next1");
+            var next2=document.getElementById("next2");
+            var back1=document.getElementById("back1");
+            var back2=document.getElementById("back2");
+            
+            var progress=document.getElementById("progress");
+            
+            next1.onclick = function(){
+                form1.style.left="-450px";
+                form2.style.left="40px";
+                progress.style.width="240px";
+            }
+            back1.onclick = function(){
+                form1.style.left="40px";
+                form2.style.left="450px";
+                 progress.style.width="120px";
+            }
+            next2.onclick = function(){
+                form2.style.left="-450px";
+                form3.style.left="40px";
+                 progress.style.width="360px";
+            }
+            back2.onclick = function(){
+                form2.style.left="40px";
+                form3.style.left="450px";
+                 progress.style.width="240px";
+            }
+            
+        </script>
+    </body>
+
+</html>

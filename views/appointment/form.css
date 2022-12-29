@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background: rgb(39, 154, 248);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 390px;
+    width: 100%;
+    height: 80vh;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 14px 14px 0 rgba(147, 202, 246, 0.836);
+    margin: auto;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    color: #332902;
+}
+.input{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+     */
+     margin-left: 60px;
+}
+#dr1{
+    color: black;
+    text-decoration: none;
+    margin-right: 55px;
+}
+#dr2{
+    color: black;
+    text-decoration: none;
+    margin-right: 54px;
+}
+#dr3{
+    text-decoration: none;
+    color: black;
+    margin-right: 62px;
+}
+#d4{
+    text-decoration: none;
+    color: black;
+    margin-right: 62px;
+}
+.input-item{
+    padding: 8px 20px;
+    margin: 5px;
+    border: none;
+    border-bottom: 1px solid #332902 ;
+    text-align: center;
+    color: #332902;
+    font-size: 15px;
+    /* border-radius: 5px; */
+}
+.input-item:hover{
+    background: rgba(147, 202, 246, 0.836);
+    border-radius: 50px;
+}
+/* .wrapper .input{
+    margin-bottom: 10px;
+}
+
+.input input[type ="text"].
+
+.wrapper textarea{
+    border: 1px soild #e0e0e0;
+    width: 100%;
+    padding: 10px;
+}
+.wrapper textarea{
+    resize: none;
+    height: 80px;
+} */
+#a1{
+    margin-right: 24px;
+    text-decoration: none;
+    color: black;
+}
+#a2{
+    margin-right: 29px;
+    text-decoration: none;
+    color: black;
+}
+.container .btn input[type="Submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: rgb(134 201 255);
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#btn_sub{
+    margin-left: 100px;
+    /* border-radius: 25px; */
+    cursor: pointer;
+    border: none;
+    letter-spacing: 2px;
+}
+#btn_sub:hover{
+    background: rgba(147, 202, 246, 0.836);
+    border-radius: 50px;
+}
+#error{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+
+}

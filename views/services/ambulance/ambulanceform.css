@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("pexels-adam-borkowski-4389388.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 360px;
+    height:414px;
+    margin:8% auto;
+    background: #fff;
+    border-radius:5px;
+    position:relative;
+    overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+    
+}
+
+.container form{
+    width: 280px;
+    position: absolute;
+    top:100px;
+    left:40px;
+    transition: 0.8s;
+}
+
+.btn-box{
+    width:100%;
+    margin:30px auto;
+    text-align: center;
+}
+
+form input{
+    width: 100%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+form button{
+    width:110px;
+    height:35px;
+    margin:0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius:30px;
+    border:0;
+    outline:none;
+    color:#fff;
+    cursor:pointer;
+}
+
+#form2{
+    left: 450px;
+}
+
+#form3{
+    left: 450px;
+}
+#form3 label{
+    color: #999;
+}
+
+.steprow{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.stepcol{
+    width:120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    transition: 2s;
+}
+
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+
+.checkbox{
+    vertical-align: middle;
+}
+
+

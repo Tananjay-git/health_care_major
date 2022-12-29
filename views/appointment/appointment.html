@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <!-- <script src=""></script> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Make an Appointment</h1>
+        <!-- <form action="" id="myform" >
+        </form> -->
+        <form  class="input" method="post" action="/appointment">
+            <input type="text" class="input-item" placeholder="Name" name="name" id="Name">
+            <!-- <input type="text" class="input-item" placeholder="Subject" id="Subject"> -->
+            <input type="text" class="input-item" placeholder="Phone" name="phone" id="Phone">
+            <input type="text" class="input-item" placeholder="Email" name="email" id="Email"><br>
+            Appointment :<input type="date" class="input-item" placeholder="Appointment" name="date" id="date"><br><br>
+            <a href="#" id="a1">Orthopedician</a>  
+            <input type="radio" name="doctor_type" value="Orthopedician" id=""> Child Specialists 
+            <input type="radio" name="doctor_type" value="Child Specialists" id=""><br>
+            Dental Specialists 
+            <input type="radio" name="doctor_type" value="Dental Specialists" id=""> <a href="#" id="a2">Cardiologist</a> 
+            <input type="radio" name="doctor_type" value="Cardiologist" id=""><br><br>
+
+            <a href="#" id="dr1">Doctor 1 &nbsp&nbsp&nbsp[9:00am - 12:00pm]</a><input type="radio" name="doctor" value="Doctor 1 [9:00am - 12:00pm] in XYZ Hospital" id=""><br>
+            <a href="#" id="dr2">Doctor 2 &nbsp&nbsp&nbsp[12:00pm - 3:00pm]</a><input type="radio" name="doctor" value="Doctor 2 [12:00pm - 3:00pm] in ABC Hospital" id=""><br>
+            <a href="#" id="dr3">Doctor 3 &nbsp&nbsp&nbsp[3:00pm - 6:00pm]</a><input type="radio" name="doctor" value="Doctor 3 [3:00pm - 6:00pm] in PQR Hospital" id=""><br>
+            <a href="#" id="d4">Doctor 4 &nbsp&nbsp&nbsp[6:00pm - 9:00pm]</a><input type="radio" name="doctor" value="Doctor 4 [6:00pm - 9:00pm] in STR Hospital" id=""><br>
+            <textarea placeholder="Message" class="input-item" name="message" id="Message"></textarea>
+            <div class="btn">
+                <button id="btn_sub">submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="error"></div>
+</body>
+</html>

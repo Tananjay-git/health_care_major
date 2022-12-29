@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/health_care_3.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <img src="/images/logo.png" alt="Health Care" height="100px" width="100px" class="logo" href=".main">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+            <img src="/images/moon.png" alt="Theme" id="icon">
+        </nav>
+        <div class="screen">
+            <div class="info">
+                <h1><span>Health</span> Care</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="img-box">
+                <img src="/images/background.png" class="back-img" alt="Image">
+                <img src="/images/doctor.png"  class="main-img" alt="Image">
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="/appointment" class="register">Appointment</a>
+        </div>
+    </div>
+    <script>
+        
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "/images/sun.png";
+        }else{
+            icon.src = "/images/moon.png";
+        }
+    }
+    </script>
+</body>
+</html>

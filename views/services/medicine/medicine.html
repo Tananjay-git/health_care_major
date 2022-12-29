@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine List</title>
+    <link rel="stylesheet" href="medicine.css">
+</head>
+<body>
+    <div class="accordion-body">  
+        <div class="accordion">  
+         <h1>Medicine List</h1>  
+         <hr>  
+         <div class="container">  
+          <div class="label">Medicine related to <span>Orthopaedic</span> Surgeries or injuries</div>  
+          <div class="content"><ul>
+              <li>Medicine 1</li>
+              <li>Medicine 2</li>
+              <li>Medicine 3</li>
+              <li>Medicine 4</li>
+          </ul></div>  
+         </div>  
+         <hr>  
+         <div class="container">  
+          <div class="label">Medicines related to <span>Pediatrics</span></div>  
+          <div class="content"><ul>
+            <li>Medicine 1</li>
+            <li>Medicine 2</li>
+            <li>Medicine 3</li>
+            <li>Medicine 4</li>
+        </ul>
+       </div>  
+         </div>  
+         <hr>  
+         <div class="container">  
+          <div class="label">Medicine related to <span>Dental</span> Procedures or injuries </div>  
+          <div class="content"><ul>
+            <li>Medicine 1</li>
+            <li>Medicine 2</li>
+            <li>Medicine 3</li>
+            <li>Medicine 4</li>
+        </ul></div>  
+         </div>  
+         <hr>  
+         <div class="container">  
+          <div class="label">Medicines related to <span>Cardiac</span> health and surgeries</div>  
+          <div class="content"><ul>
+            <li>Medicine 1</li>
+            <li>Medicine 2</li>
+            <li>Medicine 3</li>
+            <li>Medicine 4</li>
+        </ul> </div>  
+         </div>  
+           </div>  
+        </div>  
+
+
+       <script >
+            const accordion = document.getElementsByClassName('container');  
+            for (i=0; i<accordion.length; i++) {  
+                accordion[i].addEventListener('click', function () {  
+                this.classList.toggle('active')  
+                })  
+                } 
+       </script> 
+    
+</body>
+</html>
